@@ -4,8 +4,6 @@ import random
 
 BACKGROUND_COLOR = "#B1DDC6"
 current_card = {}
-cur_index = 0
-# MAX_INDEX = len(flash_cards)
 
 
 # ---------------------------- LOAD FLASH CARDS ------------------------------- #
@@ -44,7 +42,6 @@ def card_flip():
     canvas.itemconfig(card_image, image=card_back)
     canvas.itemconfig(title_text, text="English", fill="white")
     canvas.itemconfig(word_text, text=english_word, fill="white")
-    cur_index += 1
 
 
 # ---------------------------- UI SETUP ------------------------------- #
