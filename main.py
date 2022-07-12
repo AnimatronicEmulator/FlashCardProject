@@ -37,8 +37,7 @@ def new_card():
 
 # ---------------------------- CARD FLIP ------------------------------- #
 def card_flip():
-    global cur_index
-    english_word = flash_cards[cur_index]["english"]
+    english_word = flash_cards[current_card]["english"]
     canvas.itemconfig(card_image, image=card_back)
     canvas.itemconfig(title_text, text="English", fill="white")
     canvas.itemconfig(word_text, text=english_word, fill="white")
